@@ -1,0 +1,13 @@
+<!-- on voudrait rajouter ici le contenu de notre header.ejs -->
+<%- include('partials/header.ejs') %>
+    <p><%= locals.websiteTitle %></p>
+    <h1><%= ville.name %></h1>
+    <p><%= ville.tz %></p>
+
+    <%= toto %>
+
+    <p>Nous sommes le <%= jour %>, il est <%= heure %></p>
+
+    <p><a href="/">Retour à la liste des capitales</a></p>
+
+<%- include('partials/footer.ejs') %>

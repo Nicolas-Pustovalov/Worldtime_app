@@ -1,0 +1,24 @@
+
+<%- include('partials/header.ejs') %>
+    <header>
+
+        <p><%= locals.websiteTitle %></p>
+        <h1>Liste des grandes capitales du monde</h1>
+    </header>
+    <main>
+        <ul>
+            <!-- boucle for pour afficher toutes les villes dynamiquement : -->
+            <% for (const ville of list) { %>
+                <li>
+                    <a href="/city/<%= ville.name.toLowerCase() %>"> 
+                        <%= ville.name %> 
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </main>
+    <footer>
+         2022
+    </footer>
+
+<%- include('partials/footer.ejs') %>
